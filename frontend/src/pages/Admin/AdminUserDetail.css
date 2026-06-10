@@ -1,0 +1,178 @@
+.admin-detail-container {
+  padding-top: 20px;
+}
+
+.admin-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.admin-detail-profile-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.admin-detail-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.admin-detail-avatar.placeholder {
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.admin-detail-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-detail-name {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 5px 0;
+}
+
+.admin-detail-email {
+  font-size: 1rem;
+  color: #888;
+  margin: 0;
+}
+
+.admin-detail-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.admin-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .admin-detail-grid {
+    grid-template-columns: 1fr;
+  }
+  .admin-detail-header { 
+    flex-direction: column; 
+    text-align: center; 
+    padding: 20px; 
+  }
+  .admin-detail-profile-info { 
+    flex-direction: column; 
+  }
+  .admin-detail-actions { 
+    flex-direction: column; 
+    width: 100%; 
+  }
+  .admin-detail-actions button { 
+    width: 100%; 
+  }
+}
+
+.admin-detail-card {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.admin-detail-card h3 {
+  font-size: 1.2rem;
+  color: #cfff04;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #222;
+  color: #ccc;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-row span {
+  color: #888;
+}
+
+.admin-link {
+  color: #cfff04;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.admin-link:hover {
+  text-decoration: underline;
+}
+
+.admin-bio-card p {
+  color: #eee;
+  line-height: 1.6;
+}
+
+.admin-warnings-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.warning-item {
+  background: #0a0a0a;
+  border-left: 4px solid #ff3366;
+  padding: 15px;
+  border-radius: 0 8px 8px 0;
+}
+
+.warning-item.read {
+  border-left-color: #888;
+  opacity: 0.8;
+}
+
+.warning-msg {
+  margin: 0 0 10px 0;
+  color: #fff;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.warning-status {
+  font-size: 0.8rem;
+  color: #888;
+  font-weight: 600;
+}
+
+.no-warnings {
+  color: #888;
+  font-style: italic;
+}

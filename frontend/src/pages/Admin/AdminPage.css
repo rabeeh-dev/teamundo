@@ -1,0 +1,165 @@
+.admin-page {
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.admin-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+  margin-bottom: 30px;
+}
+
+.admin-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #cfff04;
+  letter-spacing: -0.5px;
+}
+
+.admin-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.admin-table-wrapper {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.admin-table th, .admin-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #222;
+}
+
+.admin-table th {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 1px;
+  font-weight: 600;
+  background: #0a0a0a;
+}
+
+.admin-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.admin-avatar-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #fff;
+}
+
+.admin-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-user-name {
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-user-email {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+.admin-badge {
+  background: #ff3366;
+  color: #fff;
+  font-size: 0.6rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 800;
+}
+
+.admin-warn-btn {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+}
+
+/* Modal styles */
+.warning-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.warning-modal-content {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.warning-modal-content h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.admin-textarea {
+  width: 100%;
+  background: #000;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+.admin-textarea:focus {
+  outline: none;
+  border-color: #cfff04;
+}
+
+.warning-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .admin-nav { flex-direction: column; gap: 15px; }
+  .admin-title { font-size: 1.5rem; text-align: center; }
+  .admin-table th, .admin-table td { padding: 12px 10px; font-size: 0.8rem; }
+  .admin-warn-btn { padding: 4px 8px; font-size: 0.7rem; }
+}
